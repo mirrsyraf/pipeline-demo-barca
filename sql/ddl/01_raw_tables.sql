@@ -1,0 +1,10 @@
+CREATE SCHEMA IF NOT EXISTS raw;
+
+CREATE TABLE IF NOT EXISTS raw.api_responses (
+	id BIGSERIAL PRIMARY KEY,
+	endpoint TEXT NOT NULL,
+	source_url TEXT NOT NULL,
+	params JSONB NOT NULL,
+	payload JSONB NOT NULL,
+	extracted_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
