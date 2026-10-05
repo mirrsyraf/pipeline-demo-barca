@@ -10,6 +10,22 @@
             "database": "barca_db",
             "username": "postgres",
             "name": "barca_db_local"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "ep-dark-violet-b3ndih3j.c-4.ap-southeast-1.aws.neon.tech",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "Barca neon",
+            "database": "neondb",
+            "username": "neondb_owner"
         }
     ]
 }
